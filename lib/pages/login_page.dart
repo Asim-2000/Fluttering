@@ -28,7 +28,7 @@ class LoginPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               TextField(
-                // decoration: InputDecoration(labelText: "referralCode"),
+                decoration: InputDecoration(labelText: "referralCode"),
                 controller: referralCodeController,
               ),
               SizedBox(height: 10),
