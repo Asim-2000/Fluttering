@@ -8,6 +8,6 @@ class HomeViewModel extends ChangeNotifier {
 
   HomeViewModel() {
     deeplinkApi.handleDynamicLink();
-    print("Hello World");
+    print("handle dynamic link");
   }
 }

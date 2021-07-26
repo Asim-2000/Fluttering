@@ -2,6 +2,7 @@ import 'package:FirstProject/pages/home_page.dart';
 import 'package:FirstProject/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:FirstProject/pages/login_page.dart';
+import 'package:FirstProject/pages/start-view.dart';
 
 class GeneratedRoute {
   static final GlobalKey<NavigatorState> navigatorKey =
@@ -18,8 +19,8 @@ class GeneratedRoute {
   static Route<dynamic> onGenerate(RouteSettings settings) {
     final arg = settings.arguments;
     switch (settings.name) {
-      case MyRoutes.homeRoute:
-        return MaterialPageRoute(builder: (_) => HomePage());
+      case StartView.routeName:
+        return MaterialPageRoute(builder: (_) => StartView());
         break;
       case MyRoutes.loginRoute:
         if (arg is String) {
@@ -28,6 +29,8 @@ class GeneratedRoute {
         }
         return MaterialPageRoute(builder: (_) => LoginPage());
 
+      case HomePage.routeName:
+        return MaterialPageRoute(builder: (_) => HomePage());
       default:
         return _onPageNotFound();
     }

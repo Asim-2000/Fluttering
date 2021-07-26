@@ -7,6 +7,7 @@ import 'package:FirstProject/utils/create_referral_code.dart';
 class HomePage extends StatelessWidget {
   final int days = 30;
   final String name = "Asim";
+  static const String routeName = '/home';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
